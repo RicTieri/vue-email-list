@@ -18,7 +18,8 @@
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
   <div id="app">
-    <ul>
+    <h1>Random email list</h1>
+    <ul v-if="emailList.length == 10">
       <li v-for="email in emailList">{{email}}</li>
     </ul>
   </div>
